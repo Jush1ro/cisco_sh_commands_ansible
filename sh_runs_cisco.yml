@@ -24,7 +24,7 @@
       
     - local_action: copy content={{ sh_ip_route }} dest=/software/ansible/cisco/routers_shrout
 	  
-	- name: run sh access-lists
+    - name: run sh access-lists
       raw: sh access-lists
       register: sh_acl
       
@@ -54,7 +54,7 @@
       
     - local_action: copy content={{ sh_vlan }} dest=/software/ansible/cisco/switches_vlan
 	  
-	- name: run sh int trunk
+    - name: run sh int trunk
       raw: sh int trunk
       register: sh_trunk
       
